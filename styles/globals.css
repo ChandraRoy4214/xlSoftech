@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @layer responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .scroll::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .scroll::-webkit-scrollbar-track {
+      background-color: #d2dbf3;
+      border-radius: 5px;
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+      background: #445276;
+      border-radius: 5px;
+    }
+  }
+}
+
+body {
+  background-color: '#FFFFFF';
+  box-sizing: 'border-box';
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: '#FFFFFF';
+  overflow-y: scroll;
+}
+
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
